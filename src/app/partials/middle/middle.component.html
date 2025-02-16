@@ -100,7 +100,7 @@
 <div class="wardApplication">
     <form id="wardApplicationForm" (ngSubmit)="createWard(wardApplicationForm)" #wardApplicationForm="ngForm">
         <!-- <div class="inputData" style="display: none;"> -->
-        <div class="inputData">
+        <div class="inputData" style="display: none;">
             <label for="wCustomer"> Customer ID </label>
             <!-- <input type="text" id="wCustId"  [value]="customerID1 + '' " name="wCustId" ngModel required> -->
             <input type="text" id="wCustId" name="wCustId" [(ngModel)]="customerID1" required>
