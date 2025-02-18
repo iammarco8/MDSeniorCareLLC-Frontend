@@ -226,4 +226,11 @@ h2 a:hover{
         margin-top: 5%;
         /* mar */
     }
+
+    .customerApplication form{
+        width: 100%;
+    }
+    .wardApplication form{
+        width: 100%;
+    }
 }
