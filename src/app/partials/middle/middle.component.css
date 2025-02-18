@@ -204,14 +204,18 @@ h2 a:hover{
         justify-items: center;
     }
 
-    .lowerPara form{
-        /* margin: auto; */
+    #reviewForm{
+        /* background-color: #c1283f; */
+        margin: auto;
+        border: solid;
         display: flex;
-        margin-top: 3%;
-        width: 100vw;
+        /* margin-top: 3%; */
+        width: 80vw;
     }
 
-
+    .pastReviews{
+        width: 80%;
+    }
     .horizontalLine{
         display: none;
     }
@@ -228,6 +232,8 @@ h2 a:hover{
     }
 
     .customerApplication form{
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
     .wardApplication form{
