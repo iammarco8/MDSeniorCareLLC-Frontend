@@ -17,7 +17,8 @@ export class DataService {
   // private API_URL_cust = 'http://localhost:7890/api/MSeniorCareLLC/v1/'
   
   // Should be deleted before launch and upload
-  private API_URL= 'http://192.168.100.81:7890/api/MDSeniorCareLLC/v1'
+  // private API_URL= 'http://192.168.100.81:7890/api/MDSeniorCareLLC/v1'
+  private API_URL= 'https://mdseniorcarellc-backend.onrender.com/api/MDSeniorCareLLC/v1'
 
   constructor(private _http:HttpClient) { }
 
