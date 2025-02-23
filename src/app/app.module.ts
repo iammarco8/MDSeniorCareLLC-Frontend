@@ -8,13 +8,15 @@ import { FooterComponent } from './partials/footer/footer.component';
 import { MiddleComponent } from './partials/middle/middle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { SecondMiddleComponent } from './partials/second-middle/second-middle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MiddleComponent
+    MiddleComponent,
+    SecondMiddleComponent
   ],
   imports: [
     BrowserModule,
