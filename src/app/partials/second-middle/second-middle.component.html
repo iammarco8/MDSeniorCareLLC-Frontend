@@ -6,150 +6,153 @@
     }
 </script>
 
-<div class="midScroll">
-    <div class="introduction">
-        <div class="paragragh1">
-            <div class="innerPara">
-            <p>
-                Our Job is to make yours easier. 
-                <br> We offer a litany of services from companion care, 
-                to hospice care. <br> 
-                As you explore our options, 
-                be sure to take a look at our reviews reflecting our work
-                ethics and services from customers just like you.
-            </p>
-        </div>        
-        <hr>
-        <div class="lowerPara" >
-            <form action="submit" id="reviewForm">
-                <p>Email us!</p>
-                <label for="email">Enter your email here:</label>
-                <br>
-                <input type="text" name="email">
-                <br>
-                <label for="review">Enter your review here:</label>
-                <br>
-                <!-- <textarea type="text" name="review"> -->
-                    <textarea name="review" id="review"></textarea>
-                <br>
-                <button >Submit</button>
-            </form>
-            
-            <br>
-            
-            <div class="horizontalLine"></div>
-            
-            <br>
+<div class="midBody">
 
-            <div class="pastReviews">
-                <div class="postedReview">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
-                        In fermentum augue quis magna sodales, in tempor eros eleifend.
-                        Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
-                    </p>
+    <div class="midScroll">
+        <div class="introduction">
+            <div class="paragragh1">
+                <div class="innerPara">
+                <p>
+                    Our Job is to make yours easier. 
+                    <br> We offer a litany of services from companion care, 
+                    to hospice care. <br> 
+                    As you explore our options, 
+                    be sure to take a look at our reviews reflecting our work
+                    ethics and services from customers just like you.
+                </p>
+            </div>        
+            <hr>
+            <div class="lowerPara" >
+                <form action="submit" id="reviewForm">
+                    <p>Email us!</p>
+                    <label for="email">Enter your email here:</label>
+                    <br>
+                    <input type="text" name="email">
+                    <br>
+                    <label for="review">Enter your review here:</label>
+                    <br>
+                    <!-- <textarea type="text" name="review"> -->
+                        <textarea name="review" id="review"></textarea>
+                    <br>
+                    <button >Submit</button>
+                </form>
+                
+                <br>
+                
+                <div class="horizontalLine"></div>
+                
+                <br>
+    
+                <div class="pastReviews">
+                    <div class="postedReview">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
+                            In fermentum augue quis magna sodales, in tempor eros eleifend.
+                            Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
+                        </p>
+                    </div>
+                    <div class="postedReview">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
+                            In fermentum augue quis magna sodales, in tempor eros eleifend.
+                            Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
+                        </p>
+                    </div>
                 </div>
-                <div class="postedReview">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
-                        In fermentum augue quis magna sodales, in tempor eros eleifend.
-                        Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
-                    </p>
-                </div>
+    
             </div>
-
         </div>
-    </div>
-        <img id="rightPic" src="..\assets\stock_images\vladimir-yelizarov-gvrsX4xBemk-unsplash.jpg" alt="">
+            <!-- <img id="rightPic" src="..\assets\stock_images\vladimir-yelizarov-gvrsX4xBemk-unsplash.jpg" alt=""> -->
+            <img id="rightPic" src="..\assets\stock_images\seniorcare2.jpg" alt="">
+        </div>
+        
     </div>
     
+    <br>
+    <hr>
+    <br>
+    <div class="customerApplication">
+        <form id="customerApplicationForm" (ngSubmit)="createCustomer(customerApplicationForm)" #customerApplicationForm="ngForm" id="signUpForm">
+            <div></div>
+            <br>
+            <div class="inputData">
+                <label for="f_nm">First Name</label>
+                <input type="text" id="f_nm" name="f_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="l_nm">Last Name</label>
+                <input type="text" id="l_nm" name="l_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="email"> Email </label>
+                <input type="text" id="email" name="email" ngModel required>
+            </div>
+            <button [disabled]="customerApplicationForm.invalid" (click)="displayChange()">Procede</button>
+            <!-- <button [disabled]="customerApplicationForm.invalid">Procede</button> -->
+            <div></div>
+            <br>
+        </form>
+    </div>
+    
+    <div class="wardApplication">
+        <form id="wardApplicationForm" (ngSubmit)="createWard(wardApplicationForm)" #wardApplicationForm="ngForm">
+            <!-- <div class="inputData" style="display: none;"> -->
+            <div class="inputData">
+                <label for="wCustomer"> Customer ID </label>
+                <!-- <input type="text" id="wCustId"  [value]="customerID1 + '' " name="wCustId" ngModel required> -->
+                <input type="text" id="wCustId" name="wCustId" [(ngModel)]="customerID1" required>
+                <!-- <input type="text" id="wCustId"  value={{customerID1}} name="wCustId" ngModel> -->
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wf_nm">Ward's first Name</label>
+                <input type="text" id="wf_nm" name="wf_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wl_nm">Ward's last Name</label>
+                <input type="text" id="wl_nm" name="wl_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wloc">Wards Location</label>
+                <input type="text" id="wloc" name="wloc" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wphn">Wards Phone Number</label>
+                <input type="text" id="wphn" name="wphn" ngModel required>
+                <br>
+            </div>
+    
+            <!-- <button>Apply</button> -->
+            <!-- <button (click)="displayReturn()" [disabled]="wardApplicationForm">Apply</button> -->
+            <button (click)="displayReturn()"  [disabled]="wardApplicationForm.invalid">Apply</button>
+            <br>
+        </form>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+    <div class="map">
+        
+    </div>
+    <br>
+    <br>
+    <h2>
+        <a href="">FAQ's</a>
+    </h2>
+    <br>
+    <br>
 </div>
-
-<br>
-<hr>
-<br>
-<div class="customerApplication">
-    <form id="customerApplicationForm" (ngSubmit)="createCustomer(customerApplicationForm)" #customerApplicationForm="ngForm" id="signUpForm">
-        <div></div>
-        <br>
-        <div class="inputData">
-            <label for="f_nm">First Name</label>
-            <input type="text" id="f_nm" name="f_nm" ngModel required>
-            <br>
-        </div>
-
-        <div class="inputData">
-            <label for="l_nm">Last Name</label>
-            <input type="text" id="l_nm" name="l_nm" ngModel required>
-            <br>
-        </div>
-
-        <div class="inputData">
-            <label for="email"> Email </label>
-            <input type="text" id="email" name="email" ngModel required>
-        </div>
-        <button [disabled]="customerApplicationForm.invalid" (click)="displayChange()">Procede</button>
-        <!-- <button [disabled]="customerApplicationForm.invalid">Procede</button> -->
-        <div></div>
-        <br>
-    </form>
-</div>
-
-<div class="wardApplication">
-    <form id="wardApplicationForm" (ngSubmit)="createWard(wardApplicationForm)" #wardApplicationForm="ngForm">
-        <!-- <div class="inputData" style="display: none;"> -->
-        <div class="inputData">
-            <label for="wCustomer"> Customer ID </label>
-            <!-- <input type="text" id="wCustId"  [value]="customerID1 + '' " name="wCustId" ngModel required> -->
-            <input type="text" id="wCustId" name="wCustId" [(ngModel)]="customerID1" required>
-            <!-- <input type="text" id="wCustId"  value={{customerID1}} name="wCustId" ngModel> -->
-            <br>
-        </div>
-
-        <div class="inputData">
-            <label for="wf_nm">Ward's first Name</label>
-            <input type="text" id="wf_nm" name="wf_nm" ngModel required>
-            <br>
-        </div>
-
-        <div class="inputData">
-            <label for="wl_nm">Ward's last Name</label>
-            <input type="text" id="wl_nm" name="wl_nm" ngModel required>
-            <br>
-        </div>
-
-        <div class="inputData">
-            <label for="wloc">Wards Location</label>
-            <input type="text" id="wloc" name="wloc" ngModel required>
-            <br>
-        </div>
-
-        <div class="inputData">
-            <label for="wphn">Wards Phone Number</label>
-            <input type="text" id="wphn" name="wphn" ngModel required>
-            <br>
-        </div>
-
-        <!-- <button>Apply</button> -->
-        <!-- <button (click)="displayReturn()" [disabled]="wardApplicationForm">Apply</button> -->
-        <button (click)="displayReturn()"  [disabled]="wardApplicationForm.invalid">Apply</button>
-        <br>
-    </form>
-</div>
-
-<br>
-<hr>
-<br>
-<div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.8759960332472!2d-74.24953362513477!3d40.72074623708188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3ace67e8940e5%3A0xec6788966112d705!2s945%20Chancellor%20Ave%2C%20Irvington%2C%20NJ%2007111%2C%20USA!5e0!3m2!1sen!2sjm!4v1735622384689!5m2!1sen!2sjm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
-<br>
-<br>
-<h2>
-    <a href="">FAQ's</a>
-</h2>
-<br>
-<br>

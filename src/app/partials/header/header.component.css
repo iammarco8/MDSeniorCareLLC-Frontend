@@ -1,7 +1,12 @@
+.headBody{
+    background-color: #d4d4d2;
+    /* border: solid; */
+}
 .headArea{
     margin-left: -15px;
     margin-right: -15px;
     background-color: #d4d4d2;
+    /* background-color: #FAEFD7; */
 }
 
 
@@ -28,13 +33,22 @@
     /* border: solid; */
     height: 80%;
 }
+.navigation{
+    /* border: solid; */
+    background-color: #d4d4d2;
+}
+
+#mainNav{
+    background-color: #d4d4d2;
+}
 
 #mainNav a{
     border: solid;
     margin-left: 20px;
     border-radius: 5px;
     border-style: none;
-    background-color:#ffffff ;
+    /* background-color:#ffffff ; */
+    background-color: #d4d4d2;
     color: #c1283f;
     padding: 1% 2%;
 }
