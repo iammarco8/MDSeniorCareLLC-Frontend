@@ -4,6 +4,7 @@
     /* border-radius: 12px; */
     /* padding: 10px; */
     /* border: solid; */
+    /* margin: -10px; */
 }
 .midscroll{
     display: flex;
@@ -22,6 +23,7 @@
 
 .innerPara{
     display: flex;
+    margin: 10px;
 }
 
 #rightPic{
@@ -40,7 +42,7 @@
     flex-direction: column;
     text-align:left ;
     background: #dc6bf9;
-    color:white;
+    /* color:white;*/
     border-radius: 10px;
     height: 30%;
     width: 48%;
@@ -114,11 +116,11 @@
 }
 
 .customerApplication form button{
-    background-color: #dc6bf9;
+    background-color: #c1283f;
     border: none;
     border-radius: 5px;
     width: fit-content;
-
+    color: #ffff;
 }
 
 .wardApplication{
@@ -142,7 +144,9 @@
 }
 
 .wardApplication form button{
-    background-color: #dc6bf9;
+    /* background-color: #dc6bf9; */
+    background-color: #c1283f;
+    color: #ffff;
     border: none;
     border-radius: 5px;
     width: fit-content;
@@ -217,7 +221,7 @@ h2 a:hover{
     #reviewForm{
         /* background-color: #c1283f; */
         margin: auto;
-        border: solid;
+        /* border: solid; */
         display: flex;
         /* margin-top: 3%; */
         width: 80vw;

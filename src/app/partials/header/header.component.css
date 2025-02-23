@@ -1,24 +1,28 @@
 .headBody{
     background-color: #d4d4d2;
+    /* margin: -2.5px; */
     /* border: solid; */
 }
 .headArea{
-    margin-left: -15px;
-    margin-right: -15px;
-    background-color: #d4d4d2;
+    /* margin-left: -10px;
+    margin-right: -10px; */
+    /* border: solid; */
+    margin: 0px 0px;
+    /* background-color: #d4d4d2; */
     /* background-color: #FAEFD7; */
 }
 
 
 #logo{
+    /* border: solid; */
     width: 40%; 
-    margin:  5% 0% 0% 0%;
+    margin:  0% 0% 0% 0%;
 }
 
 
 #heroImg{
     /* border:solid; */
-    width: 50%;
+    width: 48%;
     height: 50vh;
     margin: 0% 0% 0% 10%;
     border-radius: 10px;
@@ -35,22 +39,24 @@
 }
 .navigation{
     /* border: solid; */
-    background-color: #d4d4d2;
+    /* background-color: #d4d4d2; */
 }
 
 #mainNav{
-    background-color: #d4d4d2;
+    /* margin: -5px; */
+    /* border: solid; */
+    /* background-color: #d4d4d2; */
 }
 
 #mainNav a{
     border: solid;
-    margin-left: 20px;
+    margin-left: 40px;
     border-radius: 5px;
     border-style: none;
     /* background-color:#ffffff ; */
-    background-color: #d4d4d2;
+    /* background-color: #d4d4d2; */
     color: #c1283f;
-    padding: 1% 2%;
+    padding: 1.5px;
 }
 
 #mainNav a:hover{
