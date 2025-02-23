@@ -18,6 +18,11 @@
     margin: 0% 0% 0% 10%;
     border-radius: 10px;
 }
+@media(max-width:576px){
+    #heroImg{
+        display: none;
+    }
+}
 
 .heroImg img{
     /* border: solid; */
