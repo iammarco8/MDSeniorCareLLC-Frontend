@@ -28,9 +28,43 @@
     border-radius: 10px;
 }
 @media(max-width:576px){
+    .headBody{
+        position: fixed;
+    }
+
     #heroImg{
         display: none;
+
     }
+
+    #navigation{
+        /* display: flex; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+
+    }
+
+    #mainNav{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: end; */
+        /* border: solid; */
+        left: 0;
+        width: 45vw;
+        /* background-color: #c1283f; */
+        display: none;
+    }
+
+    #mainNav a{ 
+        display: flex;
+        /* width: 30%; */
+        /* border: solid; */
+        background-color: #dc6bf9;
+        margin: 1.5%;
+        /* width: 100%; */
+        /* padding: 10%; */
+    }
+
 }
 
 .heroImg img{
@@ -49,6 +83,7 @@
 }
 
 #mainNav a{
+    text-decoration: none;
     border: solid;
     margin-left: 40px;
     border-radius: 5px;

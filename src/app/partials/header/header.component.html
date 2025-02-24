@@ -1,3 +1,10 @@
+<script>
+    function menuChange(){
+        const navDisplay = document.getElementById("navMenu");
+        const hamburger = document.getElementById("menu")
+        navDisplay.setAttribute("display","block")
+    }
+</script>
 <div class="headBody" >
     <div class="headArea">
         <!-- <div class="logo">
@@ -8,14 +15,14 @@
         <img  id= "heroImg" src="../assets/stock_images/senior-care-happy.jpg">
         
     </div>
-    <br>
-    <div class="navigation">
+    <!-- <br> -->
+    <div class="navigation" id="navMenu">
         <nav id="mainNav" >
             <a routerLink="/">First Draft Design</a>
             <a routerLink="/secondDraft">Second Draft Design</a>
             <a>Login/ SignUp</a>
         </nav>
-
     </div> 
+    <button id="menu" onclick="menuChange()">Button</button>
 </div>
 <!-- <br> -->
