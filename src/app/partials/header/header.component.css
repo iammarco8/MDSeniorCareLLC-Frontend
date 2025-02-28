@@ -20,6 +20,7 @@
 }
 
 
+
 #heroImg{
     /* border:solid; */
     width: 48%;
@@ -27,6 +28,10 @@
     margin: 0% 0% 0% 10%;
     border-radius: 10px;
 }
+#navbutton{
+    display: none;
+}
+
 @media(max-width:576px){
     #heroImg{
         display: none;
@@ -38,8 +43,11 @@
     height: 80%;
 }
 .navigation{
-    /* border: solid; */
-    /* background-color: #d4d4d2; */
+    display: none;
+}
+
+#navbutton{
+    display: block;
 }
 
 #mainNav{
