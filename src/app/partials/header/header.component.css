@@ -28,11 +28,17 @@
     margin: 0% 0% 0% 10%;
     border-radius: 10px;
 }
+.headBody #navbutton{
+    display: none;
+}
+
 #navbutton{
     display: none;
 }
 
+
 @media(max-width:576px){
+   
     .headBody{
         position: fixed;
     }
@@ -41,23 +47,76 @@
         display: none;
 
     }
-
-    #navigation{
-        /* display: flex; */
-        /* flex-direction: row-revgiterse; */
-        /* flex-direction: column; */
-
+    .headBody #navbutton{
+        display: block;
+        float: right;
     }
+
+    /* .headBody #navigation #mainNav{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        display: none;
+    } */
+    .headbody .menu-icon .navicon {
+        background: #333;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
 
     #mainNav{
         display: flex;
         flex-direction: column;
-        /* justify-content: end; */
+        justify-content: end;
         /* border: solid; */
-        left: 0;
+        /* left: 0; */
         width: 45vw;
+        /* height: 0; */
         /* background-color: #c1283f; */
+        /* display: none; */
+    }
+    .navbutton:checked{
+        /* width: 50px; */
+    }
+      
+    .headbody .navbutton:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+  
+    .headbody .navbutton:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+    
+    .headbody .navbutton:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+    
+    .headbody .navbutton:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .headbody .navbutton:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    .navigation{
         display: none;
+    }
+
+    .navbutton:checked ~ .navigation{
+        /* background-color: #000; */
+        display: block;
+    }
+
+    .headBody .navigation:before,
+    .headBody .navigation:after{
+        transition: all .2s ease-out;
+    }
+    
+    .navbutton:checked ~ #mainNav{
+        display: block;
+        display: flex;
+        flex-flow: column;
     }
 
     #mainNav a{ 
@@ -77,11 +136,7 @@
     height: 80%;
 }
 .navigation{
-    display: none;
-}
-
-#navbutton{
-    display: block;
+    /* display: none; */
 }
 
 #mainNav{
