@@ -6,7 +6,8 @@ import { SecondMiddleComponent } from './partials/second-middle/second-middle.co
 
 const routes: Routes = [
   {path:'', title:'Home', component:MiddleComponent,pathMatch:'full'},
-  {path:'secondDraft', title:'SecondDraft', component:SecondMiddleComponent,pathMatch:'full'}
+  {path:'secondDraft', title:'SecondDraft', component:SecondMiddleComponent,pathMatch:'full'},
+  {path:'**', component:MiddleComponent, pathMatch:'full'}
 ];
 
 @NgModule({

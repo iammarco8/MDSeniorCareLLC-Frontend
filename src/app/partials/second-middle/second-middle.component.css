@@ -251,8 +251,16 @@ h2 a:hover{
 
 }
 
+@media (max-width:576px) {    
+        .midScroll{
+            margin-top: 10vh;
+        }
+}
+
 @media (max-width:981px){
+
     .introduction{
+        /* border: solid; */
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -261,7 +269,7 @@ h2 a:hover{
     .lowerPara{
         display: block;
         /* margin: auto; */
-        width: 98vw;
+        /* width: 98vw; */
         /* border: solid; */
         justify-items: center;
     }

@@ -191,6 +191,8 @@ h2 a:hover{
 }
 
 @media (max-width:981px){
+    
+
     .introduction{
         display: flex;
         flex-direction: column;

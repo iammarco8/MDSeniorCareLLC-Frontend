@@ -6,5 +6,32 @@ body{
     body{
         display: block;
         flex-direction: column;
+        /* margin: -2% 0%; */
+        /* width: 100%; */
+    }
+    .background{
+
+      margin: 0px 0px 0px 0px;
+      /* border: solid; */
     }
 }
+
+/* .noto-sans-<uniquifier> {
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;a             
+    font-variation-settings:
+      "wdth" 100;
+  } */
+  /* * {
+    font-family: 'Markazi Text';
+    font-weight: 400;
+  }
+
+  @supports (font-variation-settings: "wght" 450) {
+    * {
+      font-family: 'Markazi Text';
+      font-weight: 450;
+    } 
+  }*/
