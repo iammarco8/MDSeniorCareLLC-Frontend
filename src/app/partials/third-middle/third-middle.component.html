@@ -1,0 +1,208 @@
+<script>
+    function displayChange(){
+        const form_1 = document.getElementById("wardApplicationForm");
+        const form_2 = document.getElementById("customerApplicationForm")
+        form_1.setAttribute("display","blcok")
+    }
+</script>
+<div class="midBody">
+    <br>
+    <br>
+    <br>
+    <div class="midScroll">
+        <br>
+        <div class="innerPara">
+        <p>
+            We are a <b>Private</b> home care service.
+            <br>
+            Our Job is to make yours easier. 
+            <br> 
+            <!-- We offer a litany of services from companion care, 
+            to hospice care.  -->
+            
+        </p>
+        <hr>
+        <p> 
+                
+            Our specialties include:
+        </p>
+            <div class="options">
+                <div class="optionsPack">
+                    <h3>Companion Care</h3>
+                    <ul>
+                        <li>Light housekeeping</li>
+                        <br>
+                        <li>Light hospitalities such as grocery shopping and meal preparations etc...</li>
+                        <br>
+                        <li>Transportation assistance</li>
+                        <!-- <li>Conciderate Services Rendered for those who require
+                             more attention than the average adult</li>
+                        <li>In home care giving and at-hand attendancies</li> -->
+                    </ul>
+                </div>
+
+                <div class="optionsPack">
+                    <h3>Alzheimers Care</h3>
+                    <ul>
+                        <li>Conciderate Services rendered for those who require
+                             more attention than the average adult</li>
+                             <br>
+                        <li>In home care giving and at-hand attendancies</li>
+                    </ul>
+                </div>
+
+                <div class="optionsPack">
+                    <h3>Hospice Care</h3>
+                    <ul>
+                        <!-- <li>Conciderate Services Rendered for those who require
+                             more attention than the average adult</li>
+                        <li>In home care giving and at-hand attendancies</li> -->
+                        <li>In home care and bedside attendance</li>
+                        <br>
+                        <li>Special need/support accomadations</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <br> 
+
+        <p>
+            As you explore our options, 
+            be sure to take a look at our reviews reflecting our work
+            ethics and services from customers just like you.
+        </p>
+        <!-- <hr>    -->
+    </div>        
+    <hr>
+        <div class="introduction"><br>
+            <div class="paragragh1" style="scrollbar-width: none; overflow-y: scroll;">
+                <h3>
+
+                    <a href="tel:+1-862-902-9485">
+                        Call us at: +1-862-902-9485 (New Jersey)
+                    </a>
+                </h3>
+                <br>
+                    
+                <div class="lowerPara" >
+                    
+                    <br>                
+                    <br>
+        
+                    <!-- <div class="pastReviews"> -->
+                        <div class="postedReview">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
+                                In fermentum augue quis magna sodales, in tempor eros eleifend.
+                                Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
+                            </p>
+                        </div>
+                        <div class="postedReview">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
+                                In fermentum augue quis magna sodales, in tempor eros eleifend.
+                                Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
+                            </p>
+                        </div>
+                        <div class="postedReview">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Nulla vel molestie risus. Nullam vitae sollicitudin erat. 
+                                In fermentum augue quis magna sodales, in tempor eros eleifend.
+                                Vestibulum eget dui at erat fermentum consectetur vitae non erat. 
+                            </p>
+                        </div>
+                    <!-- </div> -->
+        <br>
+                </div>
+            </div>
+            <!-- <div style="height: 50px; border: solid; background-color: brown;"> -->
+                <!-- <br> -->
+            <!-- </div> -->
+            <!-- <img id="rightPic" src="..\assets\stock_images\vladimir-yelizarov-gvrsX4xBemk-unsplash.jpg" alt=""> -->
+            <img id="rightPic" src="..\assets\stock_images\seniorcare2.jpg" alt="">
+        </div>
+        
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+    <div class="customerApplication">
+        <form id="customerApplicationForm" (ngSubmit)="createCustomer(customerApplicationForm)" #customerApplicationForm="ngForm" id="signUpForm">
+            <div></div>
+            <br>
+            <div class="inputData">
+                <label for="f_nm">First Name</label>
+                <input type="text" id="f_nm" name="f_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="l_nm">Last Name</label>
+                <input type="text" id="l_nm" name="l_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="email"> Email </label>
+                <input type="text" id="email" name="email" ngModel required>
+            </div>
+            <div></div>
+            <br>
+    
+            <div class="inputData">
+                <label for="wf_nm">Ward's first Name</label>
+                <input type="text" id="wf_nm" name="wf_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wl_nm">Ward's last Name</label>
+                <input type="text" id="wl_nm" name="wl_nm" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wloc">Wards Location</label>
+                <input type="text" id="wloc" name="wloc" ngModel required>
+                <br>
+            </div>
+    
+            <div class="inputData">
+                <label for="wphn">Wards Phone Number</label>
+                <input type="text" id="wphn" name="wphn" ngModel required>
+                <br>
+            </div>
+            
+            <div class="inputData">
+                <label for="rtc">Relationship to customer</label>
+                <input type="text" id="rtc" name="rtc" ngModel required>
+                <br>
+            </div>
+    
+            <button [disabled]="customerApplicationForm.invalid">Apply</button>
+            <br>
+        </form>
+    </div>
+    
+    <div class="wardApplication">
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+    <div class="map">
+        
+    </div>
+    <br>
+    <br>
+    <h2>
+        <a href="">FAQ's</a>
+    </h2>
+    <br>
+    <br>
+</div>
