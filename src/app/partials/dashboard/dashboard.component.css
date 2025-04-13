@@ -1,0 +1,30 @@
+.table{
+    padding: 5%;
+}
+
+table{
+    /* display: flex; */
+    margin: auto;
+    border: 1px solid;
+    border-collapse: collapse;
+    column-span: solid;
+}
+
+tr th{
+    background-color: #dc6bf9;
+    border: solid;
+    margin: auto;
+}
+
+td{
+    margin: auto;
+    border: solid;
+    padding: 0.5% ;
+}
+
+@media(max-width:981px){
+    table{
+        /* table-layout: ; */
+        margin-top: 30%;
+    }
+}
