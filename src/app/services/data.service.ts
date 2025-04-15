@@ -42,6 +42,15 @@ export class DataService {
       })
     )
 
+  }; 
+  getAllCustomer():Observable<any>{
+    return this._http.get<any>(this.API_URL + `/currentUser/clientList` )
+    .pipe( 
+      map((res)=>{
+        return res
+      })
+    )
+
   };
 
   updateCustomer(id:number, data: any):Observable<any>{

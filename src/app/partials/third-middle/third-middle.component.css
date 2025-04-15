@@ -1,6 +1,7 @@
 .midBody{
     /* background-color: #FAEFD7; */
     background-color: #d4d4d2;
+    /* border: solid; */
     /* border-radius: 12px; */
     /* padding: 10px; */
     /* border: solid; */
@@ -326,7 +327,7 @@ h2 a:hover{
         display: flex;
         border-radius: 10px;
         justify-self: center;
-        /* height: 50vh; */
+        height: 300px;
         /* width: 50vw; */
         margin: auto;
         margin-top: 5%;

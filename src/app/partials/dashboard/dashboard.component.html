@@ -1,0 +1,41 @@
+<div class="table">
+    <table>
+            <tr>
+                <th>Client</th>
+                <th>Ward</th>
+                <th>Relationship to  Client</th>
+                <th>Location</th>
+                <th>Contacts (Ward)</th>
+                <th>Email (Client)</th>
+            </tr>
+        <tbody>
+            <tr ng *ngFor="let data of clients">
+                <td>
+                    {{data['f_nm']}} 
+                    {{data['l_nm']}} 
+                </td>
+                
+                <td>
+                    {{data['rtc']}} 
+                </td>
+                
+                <td>
+                    {{data['wf_nm']}} 
+                    {{data['wl_nm']}} 
+                </td>
+                
+                <td>
+                    {{data['email']}} 
+                </td>
+                
+                <td>
+                    {{data['wloc']}} 
+                </td>
+                <td>
+                    <a href="/{{data['wphn']}}"> {{data['wphn']}} </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<a routerLink="/logout"> logout </a>

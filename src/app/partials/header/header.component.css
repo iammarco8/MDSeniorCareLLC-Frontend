@@ -49,9 +49,12 @@
 }
 
 @media (max-width:981px){
+
+    
     .headBody{
         /* display: flex; */
         /* border: solid; */
+        width: 100vw;
         position: fixed;
     }
     
