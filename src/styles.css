@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 body{
+  background-color: #d4d4d2;
     /* background-color: #FAEFD7; */
 }
 @media (max-width:576px){
     body{
         display: block;
         flex-direction: column;
-        /* margin: -2% 0%; */
+        margin: -3% -3%;
         /* width: 100%; */
     }
     .background{
