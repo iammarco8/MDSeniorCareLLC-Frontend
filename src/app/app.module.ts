@@ -9,6 +9,7 @@ import { MiddleComponent } from './partials/middle/middle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SecondMiddleComponent } from './partials/second-middle/second-middle.component';
+import { ThirdMiddleComponent } from './partials/third-middle/third-middle.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SecondMiddleComponent } from './partials/second-middle/second-middle.co
     HeaderComponent,
     FooterComponent,
     MiddleComponent,
-    SecondMiddleComponent
+    SecondMiddleComponent,
+    ThirdMiddleComponent
   ],
   imports: [
     BrowserModule,

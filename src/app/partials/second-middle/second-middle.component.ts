@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+  import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { DataService } from 'src/app/services/data.service';
 import Swal from 'sweetalert2';
@@ -72,23 +73,28 @@ export class SecondMiddleComponent {
     this.dataservice.createCustomer(oForm.value).subscribe(res=>{
       // change the class of the form to hidden 
       this.customerID1 = res.dataCustomer.custID
-      const customerID = this.customerID1
-      if(res['status']=='success'){
-        // console.log(`${JSON.stringify(res.dataCustomer!['custID'])}`)
-        // console.log(customerID)
-        Swal.fire({
-          icon:'success',
-          title:'Please Enter Your Ward.'
-        })
+      if(this.customerID1){
+        // const customerID = this.customerID1
+        if(res['status']=='success'){
+          // console.log(`${JSON.stringify(res.dataCustomer!['custID'])}`)
+          // console.log(customerID)
+          Swal.fire({
+            icon:'success',
+            title:'Please Enter Your Ward.'
+          })
+        }else{
+          Swal.fire({
+            icon:'error',
+            title:'Please check your information.'
+          })
+        }
       }else{
-        Swal.fire({
-          icon:'error',
-          title:'Please check your information.'
-        })
+        setTimeout(
+          function(){
+            console.log('loading...')}, 1000)
       }
     })
   }
-
 
   // force the capitalization of the names
   createWard(oForm:NgForm){
